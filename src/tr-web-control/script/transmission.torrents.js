@@ -478,7 +478,7 @@ transmission.torrents = {
 				method: "torrent-set",
 				arguments: {
 					ids: result[index].ids,
-					trackerReplace: [parseInt(index), result[index].tracker]
+					trackerList: result[index].tracker
 				}
 			}, function(data, tags) {
 				if (data.result == "success") {
