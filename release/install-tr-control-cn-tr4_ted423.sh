@@ -10,7 +10,7 @@ ORG_INDEX_FILE="index.original.html"
 INDEX_FILE="index.html"
 TMP_FOLDER="/tmp/tr-web-control"
 PACK_NAME="master.tar.gz"
-WEB_HOST="https://github.com/ted423/transmission-web-control/archive/"
+WEB_HOST="https://github.com/zhangv2012/transmission-web-control/archive/"
 DOWNLOAD_URL="$WEB_HOST$PACK_NAME"
 # 安装类型
 # 1 安装至当前 Transmission Web 所在目录
@@ -122,7 +122,7 @@ initValues() {
 		fi
 		showLog "$MSG_SPECIFIED_VERSION $VERSION"
 		
-		DOWNLOAD_URL="https://github.com/ted423/transmission-web-control/archive/$PACK_NAME"
+		DOWNLOAD_URL="https://github.com/zhangv2012/transmission-web-control/archive/$PACK_NAME"
 	fi	
 
 	if [ $SKIP_SEARCH = 0 ]; then
@@ -488,7 +488,7 @@ downloadInstallScript() {
 		rm "$SCRIPT_NAME"
 	fi
 	showLog "$MSG_DOWNLOADING_INSTALL_SCRIPT"
-	wget "https://github.com/ted423/transmission-web-control/raw/master/release/$SCRIPT_NAME" --no-check-certificate
+	wget "https://github.com/zhangv2012/transmission-web-control/raw/master/release/$SCRIPT_NAME" --no-check-certificate
 	# 判断是否下载成功
 	if [ $? -eq 0 ]; then
 		showLog "$MSG_INSTALL_SCRIPT_DOWNLOAD_COMPLETE"
